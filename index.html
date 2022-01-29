@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="header__title">
+            <h1>Weather JS</h1>
+        </div>
+    </section>
+    <section class="main">
+        <div class="searchCon">
+            <div class="search">
+                <form action="#" class="form">
+                <h5 class="search-text">Change Location</h5>
+                <input type="text" placeholder="Enter city name" class="search-box">
+                <button class="submit">Search</button>
+            </form>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="location"></h1>
+            <div class="main-details">
+                <div class="main-details__text">
+                    <h3 class="mainDesc"></h3>
+                    <h4 class="subDesc"></h4>
+                    </div>
+                    <div class="main-details__img" >
+                        <img src="" alt="" class="icon" width="250px" height="250px">
+                    </div>
+                </div>
+               
+          
+            <ul class="sub-details">
+                <li class="feels_like"></li>
+                <li class="humidity"></li>
+                <li class="wind"></li>
+                <li class="pressure"></li>
+            </ul>
+        </div>
+    </section>
+    <script src="weather.js"></script>
+    <script src="geolocation.js"></script>
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
