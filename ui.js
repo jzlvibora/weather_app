@@ -19,16 +19,16 @@ class UI{
         this.subDesc.textContent =  weather.weather[0].description;
         
         if (weather.weather[0].id >= 200 && weather.weather[0].id <= 232) {
-            this.icon.setAttribute('src', '../img/thunder.svg');
+            this.icon.setAttribute('src', '/img/thunder.svg');
             document.body.style.backgroundImage = "url('/img/bg-thunder.jpg')";
             
         }
         else if (weather.weather[0].id >= 300 && weather.weather[0].id <= 321) {
-            this.icon.setAttribute('src', '../img/drizzle.svg');
+            this.icon.setAttribute('src', '/img/drizzle.svg');
             document.body.style.backgroundImage = "url('/img/bg-drizzle.jpg')";
         }
         else if (weather.weather[0].id >= 500 && weather.weather[0].id <= 531) {
-            this.icon.setAttribute('src', '../img/rain.svg');
+            this.icon.setAttribute('src', '/img/rain.svg');
             document.body.style.backgroundImage = "url('/img/bg-rain.jpg')";
         }
         else if (weather.weather[0].id >= 600 && weather.weather[0].id <= 622) {
@@ -36,12 +36,12 @@ class UI{
             document.body.style.backgroundImage = "url('img/bg-snow.jpg')";
         }
         else if (weather.weather[0].id >= 701 && weather.weather[0].id <= 781) {
-            this.icon.setAttribute('src', '../img/weather.svg');
+            this.icon.setAttribute('src', '/img/weather.svg');
             document.body.style.backgroundImage = "url('/img/bg-weather.jpg')";
         }
         
         else if (weather.weather[0].id >= 800 && weather.weather[0].id <= 804) {
-            this.icon.setAttribute('src', '../img/clouds.svg');
+            this.icon.setAttribute('src', '/img/clouds.svg');
             document.body.style.backgroundImage = "url('img/bg-cloudy.jpg')";
 
         }
