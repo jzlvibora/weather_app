@@ -12,19 +12,26 @@
 <body>
     <section class="header">
         <div class="header__title">
-            <h1>Weather JS</h1>
+            <img src="./img/header-icon.svg"><h1><span>WEATHER</span> APP</h1>
         </div>
     </section>
     <section class="main">
         <div class="searchCon">
             <div class="search">
                 <form action="#" class="form">
-                <h5 class="search-text">Change Location</h5>
+                
                 <input type="text" placeholder="Enter city name" class="search-box">
                 <button class="submit">Search</button>
             </form>
             </div>
         </div>
+       <!-- toggle F/C -->
+       <center>
+       <input type="radio" id="celsius" name="temp" value="celsius">
+       <label for="celsius">Celsius</label><br>
+       <input type="radio" id="fahrenheit" name="temp" value="fahrenheit">
+       <label for="age2">Fahrenheit</label><br>  
+       </center>
         <div class="container">
             <h1 class="location"></h1>
             <div class="main-details">

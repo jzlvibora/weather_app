@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+let tempUnit = 'Fahrenheit';
 
 class UI{
     constructor() {
@@ -11,6 +11,9 @@ class UI{
         this.feelsLike = document.querySelector('.feels_like')
         this.wind = document.querySelector('.wind')
         this.pressure = document.querySelector('.pressure')
+        this.celsius = document.querySelector('#celsius');
+        this.fahrenheit = document.querySelector('#fahrenheit');
+
     }
 
     renderData(weather) {
@@ -46,9 +49,21 @@ class UI{
 
         }
 
-        this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}`;
-        this.feelsLike.textContent = `Feels Like: ${weather.main.feels_like}`;
-        this.pressure.textContent = `Pressure: ${weather.main.temp}`;
-        this.wind.textContent = `Wind: ${weather.wind.speed}`
+        this.humidity.textContent = `Relative Humidity: ${weather.main.humidity} %`;
+        this.feelsLike.textContent = `${convertKtoF(weather.main.feels_like).toFixed(1)} F `;
+        this.pressure.textContent = `Pressure: ${weather.main.temp} hPa`;
+        this.wind.textContent = `Wind: ${weather.wind.speed} m/s`;
+
+        if(tempUnit === 'Fahrenheit'){
+            this.feelsLike.textContent = `${convertKtoF(weather.main.feels_like).toFixed(1)} F `;
+        }
+        else if(tempUnit === 'Celsius'){
+            this.feelsLike.textContent = `${convertKtoC(weather.main.feels_like).toFixed(1)} C `;
+        }
+        
+        
     }
+
+   
+
 }
